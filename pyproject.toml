@@ -1,0 +1,19 @@
+[project]
+name = "throttled-link-checker"
+version = "0.1.0"
+description = "A utility to check URL status codes with throttling"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pandas>=2.2.3",
+    "requests>=2.32.3",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test*.py"]
